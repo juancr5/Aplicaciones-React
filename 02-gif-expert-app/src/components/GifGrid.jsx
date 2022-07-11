@@ -1,5 +1,6 @@
 import { useFetchGifs } from '../hooks/useFetchGifs';
-import { GifGridItem } from './GifItem';
+import PropTypes from 'prop-types';
+import GifItem from './GifItem';
 
 //Cuadricula con las tarjetas
 const GifGrid = ({ category }) => {
@@ -18,7 +19,7 @@ const GifGrid = ({ category }) => {
             <div className="card-grid">
                 {
                     images.map((image) => (
-                        <GifGridItem
+                        <GifItem
                             key={image.id}
                             {...image}
                         />
@@ -28,5 +29,10 @@ const GifGrid = ({ category }) => {
         </>
     )
 }
+
+GifGrid.propTypes = {
+    category: PropTypes.string.isRequired,
+}
+
 
 export default GifGrid;

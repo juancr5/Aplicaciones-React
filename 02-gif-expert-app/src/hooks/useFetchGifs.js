@@ -9,7 +9,6 @@ export const useFetchGifs = (category) => {
     //
     const getImages = async () => {
         const newImages = await getGifsService(category);
-
         setImages(newImages);
         setIsLoading(false);
     }
