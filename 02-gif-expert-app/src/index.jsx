@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client';
 import GifExpertApp from './GifExpertApp';
 //Importar Css
 import './styles.css';
+// Importar Animated CSS
+import 'animate.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

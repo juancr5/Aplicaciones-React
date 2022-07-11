@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const GifItem = ({ title, url, id }) => {
 
     return (
-        <div className="card animate__animated animate__fadeIn">
+        <div className="card animate__animated animate__fadeInDownBig">
             <p>{title}</p>
             <img src={url} alt={title}/>
         </div>
