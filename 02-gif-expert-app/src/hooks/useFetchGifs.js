@@ -13,6 +13,7 @@ export const useFetchGifs = (category) => {
         setIsLoading(false);
     }
 
+    //La finalidad de useEffect hacer la petición solo una vez http una vez cuando se redibuja el componente
     useEffect(() => {
         getImages();
         
