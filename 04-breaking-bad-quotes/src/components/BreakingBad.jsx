@@ -32,7 +32,7 @@ const BreakingBad = () => {
         disabled={isLoading}
         style={{ fontSize: '1.5em' }}
         onClick={() => increment()}>
-        Next quote
+        Next Quote
       </button>
 
     </>
