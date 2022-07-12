@@ -1,0 +1,14 @@
+body {
+  padding: 20px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+h1 {
+  color: white;
+  text-shadow: 5px 5px 50px #026727 ;
+  text-transform: capitalize;
+  font-size: 60px;
+}
