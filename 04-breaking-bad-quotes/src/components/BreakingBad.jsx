@@ -3,13 +3,20 @@ import { useFetch } from "../hooks/useFetch";
 
 const BreakingBad = () => {
 
-  //Variable conatdor
+  //Trae las variables counter, increment  desde el Hook useCouter
   const { counter, increment } = useCounter(1);
   //Desestructuracion del la Data traida del useFetch
   const { data, isLoading, hasError } = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
-  //Asignacion de la data si esta tiene informacion condicional con &&
+  //Desestructuracion de la data si no esta vacia 
   const { author, quote } = !!data && data[0];
 
+  /*Otra Forma de hacer un If
+    !!data = si esto es true
+    data[0] = hara lo siguinte
+
+    sino las variables tendran valor de undefined en la desestructuracion de la data
+  */
+ 
   return (
     <>
       <h1>BreakingBad Quotes</h1>
