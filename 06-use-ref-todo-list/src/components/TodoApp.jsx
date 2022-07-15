@@ -17,7 +17,7 @@ const TodoApp = () => {
 
     return (
         <>
-            <h1>TodoApp</h1>
+            <h1>Todo App</h1>
             <h3>totales {todosCount}, <small>pendientes: {pendingTodosCount}</small> </h3>
             <hr />
 
