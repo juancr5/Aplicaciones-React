@@ -6,8 +6,10 @@ const init = () => {
     return JSON.parse(localStorage.getItem('todos')) || [];
 }
 
+
 export const useTodos = () => {
 
+    //const [state, dispatch] = useReducer(reducer, initialArg, init);
     const [todos, dispatch] = useReducer(todoReducer, [], init);
 
     //Guarda los TODOS en el Local Storage cada vez que hay un cambio en el objeto TODO

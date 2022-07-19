@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import TodoEdit from './forms/todoEdit';
+import TodoEdit from './forms/TodoEdit';
 
 const TodoItem = ({ todo, onEditTodo, onToggleTodo, onDeleteTodo}) => {
 
